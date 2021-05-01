@@ -1,6 +1,6 @@
 package search
 
-// I'm Fedya :)
+
 
 import (
 	"bufio"
@@ -106,7 +106,7 @@ func Any(ctx context.Context, phrase string, files []string) <-chan Result {
 	return ch
 }
 
-//FindAll ...
+//FindAll 
 func FindAll(phrase, path string) ([]Result, error) {
 	res := []Result{}
 	file, err := os.Open(path)
@@ -138,7 +138,7 @@ func FindAll(phrase, path string) ([]Result, error) {
 	return res, nil
 }
 
-//FindAny ...
+//FindAny 
 func FindAny(phrase, path string) (Result, error) {
 	var lines []string
 	res := Result{}
